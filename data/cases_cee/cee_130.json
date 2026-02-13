@@ -1,0 +1,158 @@
+{
+  "case_id": "cee_130",
+  "zone": "RO",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone RO around 2025-10-11T15:00:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-11T13:00:00Z",
+      "price": 54.48
+    },
+    {
+      "ts": "2025-10-11T13:15:00Z",
+      "price": 77.69
+    },
+    {
+      "ts": "2025-10-11T13:30:00Z",
+      "price": 93.23
+    },
+    {
+      "ts": "2025-10-11T13:45:00Z",
+      "price": 89.11
+    },
+    {
+      "ts": "2025-10-11T14:00:00Z",
+      "price": 67.85
+    },
+    {
+      "ts": "2025-10-11T14:15:00Z",
+      "price": 83.48
+    },
+    {
+      "ts": "2025-10-11T14:30:00Z",
+      "price": 99.4
+    },
+    {
+      "ts": "2025-10-11T14:45:00Z",
+      "price": 115.9
+    },
+    {
+      "ts": "2025-10-11T15:00:00Z",
+      "price": 89.04
+    },
+    {
+      "ts": "2025-10-11T15:15:00Z",
+      "price": 104.45
+    },
+    {
+      "ts": "2025-10-11T15:30:00Z",
+      "price": 131.27
+    },
+    {
+      "ts": "2025-10-11T15:45:00Z",
+      "price": 153.29
+    },
+    {
+      "ts": "2025-10-11T16:00:00Z",
+      "price": 145.68
+    },
+    {
+      "ts": "2025-10-11T16:15:00Z",
+      "price": 131.64
+    },
+    {
+      "ts": "2025-10-11T16:30:00Z",
+      "price": 153.29
+    },
+    {
+      "ts": "2025-10-11T16:45:00Z",
+      "price": 153.3
+    },
+    {
+      "ts": "2025-10-11T17:00:00Z",
+      "price": 139.39
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": [
+      {
+        "ts": "2025-10-11T13:00:00Z",
+        "value": 5143.0
+      },
+      {
+        "ts": "2025-10-11T13:15:00Z",
+        "value": 5216.0
+      },
+      {
+        "ts": "2025-10-11T13:30:00Z",
+        "value": 5344.0
+      },
+      {
+        "ts": "2025-10-11T13:45:00Z",
+        "value": 5462.0
+      },
+      {
+        "ts": "2025-10-11T14:00:00Z",
+        "value": 5655.0
+      },
+      {
+        "ts": "2025-10-11T14:15:00Z",
+        "value": 5738.0
+      },
+      {
+        "ts": "2025-10-11T14:30:00Z",
+        "value": 5885.0
+      },
+      {
+        "ts": "2025-10-11T14:45:00Z",
+        "value": 6080.0
+      },
+      {
+        "ts": "2025-10-11T15:00:00Z",
+        "value": 6258.0
+      },
+      {
+        "ts": "2025-10-11T15:15:00Z",
+        "value": 6363.0
+      },
+      {
+        "ts": "2025-10-11T15:30:00Z",
+        "value": 6490.0
+      },
+      {
+        "ts": "2025-10-11T15:45:00Z",
+        "value": 6685.0
+      },
+      {
+        "ts": "2025-10-11T16:00:00Z",
+        "value": 6855.0
+      },
+      {
+        "ts": "2025-10-11T16:15:00Z",
+        "value": 6973.0
+      },
+      {
+        "ts": "2025-10-11T16:30:00Z",
+        "value": 6943.0
+      },
+      {
+        "ts": "2025-10-11T16:45:00Z",
+        "value": 6976.0
+      },
+      {
+        "ts": "2025-10-11T17:00:00Z",
+        "value": 6898.0
+      }
+    ]
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YRO-TEL------P",
+    "day": "2025-10-11",
+    "kind": "ramp",
+    "target_ts": "2025-10-11T15:00:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

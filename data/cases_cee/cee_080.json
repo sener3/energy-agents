@@ -1,0 +1,89 @@
+{
+  "case_id": "cee_080",
+  "zone": "BG",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone BG during 2025-10-07T16:45:00Z to 2025-10-07T17:00:00Z. Provide the top drivers with numeric evidence and timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-07T14:45:00Z",
+      "price": 153.3
+    },
+    {
+      "ts": "2025-10-07T15:00:00Z",
+      "price": 113.93
+    },
+    {
+      "ts": "2025-10-07T15:15:00Z",
+      "price": 127.76
+    },
+    {
+      "ts": "2025-10-07T15:30:00Z",
+      "price": 154.31
+    },
+    {
+      "ts": "2025-10-07T15:45:00Z",
+      "price": 205.37
+    },
+    {
+      "ts": "2025-10-07T16:00:00Z",
+      "price": 146.27
+    },
+    {
+      "ts": "2025-10-07T16:15:00Z",
+      "price": 155.48
+    },
+    {
+      "ts": "2025-10-07T16:30:00Z",
+      "price": 223.04
+    },
+    {
+      "ts": "2025-10-07T16:45:00Z",
+      "price": 287.19
+    },
+    {
+      "ts": "2025-10-07T17:00:00Z",
+      "price": 240.77
+    },
+    {
+      "ts": "2025-10-07T17:15:00Z",
+      "price": 213.55
+    },
+    {
+      "ts": "2025-10-07T17:30:00Z",
+      "price": 163.56
+    },
+    {
+      "ts": "2025-10-07T17:45:00Z",
+      "price": 180.81
+    },
+    {
+      "ts": "2025-10-07T18:00:00Z",
+      "price": 178.7
+    },
+    {
+      "ts": "2025-10-07T18:15:00Z",
+      "price": 158.89
+    },
+    {
+      "ts": "2025-10-07T18:30:00Z",
+      "price": 131.01
+    },
+    {
+      "ts": "2025-10-07T18:45:00Z",
+      "price": 117.0
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": []
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YCA-BULGARIA-R",
+    "day": "2025-10-06",
+    "kind": "spike",
+    "target_ts": "2025-10-07T16:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

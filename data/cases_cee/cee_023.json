@@ -1,0 +1,89 @@
+{
+  "case_id": "cee_023",
+  "zone": "CZ",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone CZ around 2025-10-03T15:00:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-03T13:00:00Z",
+      "price": 32.79
+    },
+    {
+      "ts": "2025-10-03T13:15:00Z",
+      "price": 47.13
+    },
+    {
+      "ts": "2025-10-03T13:30:00Z",
+      "price": 74.62
+    },
+    {
+      "ts": "2025-10-03T13:45:00Z",
+      "price": 84.75
+    },
+    {
+      "ts": "2025-10-03T14:00:00Z",
+      "price": 63.09
+    },
+    {
+      "ts": "2025-10-03T14:15:00Z",
+      "price": 71.36
+    },
+    {
+      "ts": "2025-10-03T14:30:00Z",
+      "price": 89.37
+    },
+    {
+      "ts": "2025-10-03T14:45:00Z",
+      "price": 107.33
+    },
+    {
+      "ts": "2025-10-03T15:00:00Z",
+      "price": 73.51
+    },
+    {
+      "ts": "2025-10-03T15:15:00Z",
+      "price": 94.72
+    },
+    {
+      "ts": "2025-10-03T15:30:00Z",
+      "price": 123.98
+    },
+    {
+      "ts": "2025-10-03T15:45:00Z",
+      "price": 151.67
+    },
+    {
+      "ts": "2025-10-03T16:00:00Z",
+      "price": 125.25
+    },
+    {
+      "ts": "2025-10-03T16:15:00Z",
+      "price": 135.09
+    },
+    {
+      "ts": "2025-10-03T16:30:00Z",
+      "price": 155.46
+    },
+    {
+      "ts": "2025-10-03T16:45:00Z",
+      "price": 168.58
+    },
+    {
+      "ts": "2025-10-03T17:00:00Z",
+      "price": 151.06
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": []
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YCZ-CEPS-----N",
+    "day": "2025-10-02",
+    "kind": "ramp",
+    "target_ts": "2025-10-03T15:00:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

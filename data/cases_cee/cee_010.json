@@ -1,0 +1,89 @@
+{
+  "case_id": "cee_010",
+  "zone": "PL",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone PL around 2025-10-02T18:30:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-02T16:30:00Z",
+      "price": 190.0
+    },
+    {
+      "ts": "2025-10-02T16:45:00Z",
+      "price": 246.98
+    },
+    {
+      "ts": "2025-10-02T17:00:00Z",
+      "price": 263.02
+    },
+    {
+      "ts": "2025-10-02T17:15:00Z",
+      "price": 242.17
+    },
+    {
+      "ts": "2025-10-02T17:30:00Z",
+      "price": 184.29
+    },
+    {
+      "ts": "2025-10-02T17:45:00Z",
+      "price": 156.38
+    },
+    {
+      "ts": "2025-10-02T18:00:00Z",
+      "price": 187.41
+    },
+    {
+      "ts": "2025-10-02T18:15:00Z",
+      "price": 171.43
+    },
+    {
+      "ts": "2025-10-02T18:30:00Z",
+      "price": 133.15
+    },
+    {
+      "ts": "2025-10-02T18:45:00Z",
+      "price": 110.85
+    },
+    {
+      "ts": "2025-10-02T19:00:00Z",
+      "price": 134.52
+    },
+    {
+      "ts": "2025-10-02T19:15:00Z",
+      "price": 119.85
+    },
+    {
+      "ts": "2025-10-02T19:30:00Z",
+      "price": 104.9
+    },
+    {
+      "ts": "2025-10-02T19:45:00Z",
+      "price": 100.05
+    },
+    {
+      "ts": "2025-10-02T20:00:00Z",
+      "price": 111.98
+    },
+    {
+      "ts": "2025-10-02T20:15:00Z",
+      "price": 107.57
+    },
+    {
+      "ts": "2025-10-02T20:30:00Z",
+      "price": 103.45
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": []
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YPL-AREA-----S",
+    "day": "2025-10-01",
+    "kind": "ramp",
+    "target_ts": "2025-10-02T18:30:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

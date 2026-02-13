@@ -1,0 +1,102 @@
+{
+  "case_id": "cee_108",
+  "zone": "SK",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone SK around 2025-10-09T20:15:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-09T18:15:00Z",
+      "price": 93.06
+    },
+    {
+      "ts": "2025-10-09T18:30:00Z",
+      "price": 91.93
+    },
+    {
+      "ts": "2025-10-09T18:45:00Z",
+      "price": 85.91
+    },
+    {
+      "ts": "2025-10-09T19:00:00Z",
+      "price": 99.12
+    },
+    {
+      "ts": "2025-10-09T19:15:00Z",
+      "price": 96.51
+    },
+    {
+      "ts": "2025-10-09T19:30:00Z",
+      "price": 81.81
+    },
+    {
+      "ts": "2025-10-09T19:45:00Z",
+      "price": 82.41
+    },
+    {
+      "ts": "2025-10-09T20:00:00Z",
+      "price": 102.63
+    },
+    {
+      "ts": "2025-10-09T20:15:00Z",
+      "price": 142.0
+    },
+    {
+      "ts": "2025-10-09T20:30:00Z",
+      "price": 95.59
+    },
+    {
+      "ts": "2025-10-09T21:00:00Z",
+      "price": 142.94
+    },
+    {
+      "ts": "2025-10-09T21:15:00Z",
+      "price": 137.61
+    },
+    {
+      "ts": "2025-10-09T21:30:00Z",
+      "price": 118.22
+    },
+    {
+      "ts": "2025-10-09T21:45:00Z",
+      "price": 104.46
+    },
+    {
+      "ts": "2025-10-09T22:00:00Z",
+      "price": 101.18
+    },
+    {
+      "ts": "2025-10-09T22:15:00Z",
+      "price": 91.77
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": [
+      {
+        "ts": "2025-10-09T19:00:00Z",
+        "value": 3122.0
+      },
+      {
+        "ts": "2025-10-09T20:00:00Z",
+        "value": 2898.0
+      },
+      {
+        "ts": "2025-10-09T21:00:00Z",
+        "value": 2756.0
+      },
+      {
+        "ts": "2025-10-09T22:00:00Z",
+        "value": 2641.0
+      }
+    ]
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YSK-SEPS-----K",
+    "day": "2025-10-09",
+    "kind": "ramp",
+    "target_ts": "2025-10-09T20:15:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

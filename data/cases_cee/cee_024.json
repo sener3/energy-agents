@@ -1,0 +1,106 @@
+{
+  "case_id": "cee_024",
+  "zone": "SK",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone SK during 2025-10-03T04:45:00Z to 2025-10-03T05:00:00Z. Provide the top drivers with numeric evidence and timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-03T02:45:00Z",
+      "price": 85.4
+    },
+    {
+      "ts": "2025-10-03T03:00:00Z",
+      "price": 86.16
+    },
+    {
+      "ts": "2025-10-03T03:15:00Z",
+      "price": 89.18
+    },
+    {
+      "ts": "2025-10-03T03:30:00Z",
+      "price": 96.89
+    },
+    {
+      "ts": "2025-10-03T03:45:00Z",
+      "price": 110.86
+    },
+    {
+      "ts": "2025-10-03T04:00:00Z",
+      "price": 102.27
+    },
+    {
+      "ts": "2025-10-03T04:15:00Z",
+      "price": 116.14
+    },
+    {
+      "ts": "2025-10-03T04:30:00Z",
+      "price": 146.97
+    },
+    {
+      "ts": "2025-10-03T04:45:00Z",
+      "price": 165.81
+    },
+    {
+      "ts": "2025-10-03T05:00:00Z",
+      "price": 153.43
+    },
+    {
+      "ts": "2025-10-03T05:15:00Z",
+      "price": 165.38
+    },
+    {
+      "ts": "2025-10-03T05:30:00Z",
+      "price": 152.54
+    },
+    {
+      "ts": "2025-10-03T05:45:00Z",
+      "price": 133.75
+    },
+    {
+      "ts": "2025-10-03T06:00:00Z",
+      "price": 145.27
+    },
+    {
+      "ts": "2025-10-03T06:15:00Z",
+      "price": 129.91
+    },
+    {
+      "ts": "2025-10-03T06:30:00Z",
+      "price": 115.34
+    },
+    {
+      "ts": "2025-10-03T06:45:00Z",
+      "price": 94.29
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": [
+      {
+        "ts": "2025-10-03T03:00:00Z",
+        "value": 2880.0
+      },
+      {
+        "ts": "2025-10-03T04:00:00Z",
+        "value": 3312.0
+      },
+      {
+        "ts": "2025-10-03T05:00:00Z",
+        "value": 3496.0
+      },
+      {
+        "ts": "2025-10-03T06:00:00Z",
+        "value": 3472.0
+      }
+    ]
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YSK-SEPS-----K",
+    "day": "2025-10-03",
+    "kind": "spike",
+    "target_ts": "2025-10-03T04:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "cee_026",
+  "zone": "SK",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone SK around 2025-10-03T15:30:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-03T13:30:00Z",
+      "price": 88.79
+    },
+    {
+      "ts": "2025-10-03T13:45:00Z",
+      "price": 99.89
+    },
+    {
+      "ts": "2025-10-03T14:00:00Z",
+      "price": 83.84
+    },
+    {
+      "ts": "2025-10-03T14:15:00Z",
+      "price": 90.97
+    },
+    {
+      "ts": "2025-10-03T14:30:00Z",
+      "price": 102.71
+    },
+    {
+      "ts": "2025-10-03T14:45:00Z",
+      "price": 121.77
+    },
+    {
+      "ts": "2025-10-03T15:00:00Z",
+      "price": 97.79
+    },
+    {
+      "ts": "2025-10-03T15:15:00Z",
+      "price": 111.02
+    },
+    {
+      "ts": "2025-10-03T15:30:00Z",
+      "price": 145.31
+    },
+    {
+      "ts": "2025-10-03T15:45:00Z",
+      "price": 168.4
+    },
+    {
+      "ts": "2025-10-03T16:00:00Z",
+      "price": 130.5
+    },
+    {
+      "ts": "2025-10-03T16:15:00Z",
+      "price": 143.99
+    },
+    {
+      "ts": "2025-10-03T16:30:00Z",
+      "price": 172.06
+    },
+    {
+      "ts": "2025-10-03T16:45:00Z",
+      "price": 200.02
+    },
+    {
+      "ts": "2025-10-03T17:00:00Z",
+      "price": 163.91
+    },
+    {
+      "ts": "2025-10-03T17:15:00Z",
+      "price": 168.38
+    },
+    {
+      "ts": "2025-10-03T17:30:00Z",
+      "price": 156.31
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": [
+      {
+        "ts": "2025-10-03T14:00:00Z",
+        "value": 3190.0
+      },
+      {
+        "ts": "2025-10-03T15:00:00Z",
+        "value": 3281.0
+      },
+      {
+        "ts": "2025-10-03T16:00:00Z",
+        "value": 3375.0
+      },
+      {
+        "ts": "2025-10-03T17:00:00Z",
+        "value": 3437.0
+      }
+    ]
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YSK-SEPS-----K",
+    "day": "2025-10-03",
+    "kind": "ramp",
+    "target_ts": "2025-10-03T15:30:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

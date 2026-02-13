@@ -1,0 +1,89 @@
+{
+  "case_id": "cee_009",
+  "zone": "PL",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone PL during 2025-10-02T16:45:00Z to 2025-10-02T17:00:00Z. Provide the top drivers with numeric evidence and timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-02T14:45:00Z",
+      "price": 105.9
+    },
+    {
+      "ts": "2025-10-02T15:00:00Z",
+      "price": 100.44
+    },
+    {
+      "ts": "2025-10-02T15:15:00Z",
+      "price": 148.79
+    },
+    {
+      "ts": "2025-10-02T15:30:00Z",
+      "price": 177.2
+    },
+    {
+      "ts": "2025-10-02T15:45:00Z",
+      "price": 176.51
+    },
+    {
+      "ts": "2025-10-02T16:00:00Z",
+      "price": 148.02
+    },
+    {
+      "ts": "2025-10-02T16:15:00Z",
+      "price": 169.7
+    },
+    {
+      "ts": "2025-10-02T16:30:00Z",
+      "price": 190.0
+    },
+    {
+      "ts": "2025-10-02T16:45:00Z",
+      "price": 246.98
+    },
+    {
+      "ts": "2025-10-02T17:00:00Z",
+      "price": 263.02
+    },
+    {
+      "ts": "2025-10-02T17:15:00Z",
+      "price": 242.17
+    },
+    {
+      "ts": "2025-10-02T17:30:00Z",
+      "price": 184.29
+    },
+    {
+      "ts": "2025-10-02T17:45:00Z",
+      "price": 156.38
+    },
+    {
+      "ts": "2025-10-02T18:00:00Z",
+      "price": 187.41
+    },
+    {
+      "ts": "2025-10-02T18:15:00Z",
+      "price": 171.43
+    },
+    {
+      "ts": "2025-10-02T18:30:00Z",
+      "price": 133.15
+    },
+    {
+      "ts": "2025-10-02T18:45:00Z",
+      "price": 110.85
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": []
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YPL-AREA-----S",
+    "day": "2025-10-01",
+    "kind": "spike",
+    "target_ts": "2025-10-02T16:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "cee_075",
+  "zone": "BG",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone BG around 2025-10-06T17:45:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-06T15:45:00Z",
+      "price": 253.49
+    },
+    {
+      "ts": "2025-10-06T16:00:00Z",
+      "price": 153.3
+    },
+    {
+      "ts": "2025-10-06T16:15:00Z",
+      "price": 200.0
+    },
+    {
+      "ts": "2025-10-06T16:30:00Z",
+      "price": 281.32
+    },
+    {
+      "ts": "2025-10-06T16:45:00Z",
+      "price": 325.39
+    },
+    {
+      "ts": "2025-10-06T17:00:00Z",
+      "price": 284.34
+    },
+    {
+      "ts": "2025-10-06T17:15:00Z",
+      "price": 267.75
+    },
+    {
+      "ts": "2025-10-06T17:30:00Z",
+      "price": 244.21
+    },
+    {
+      "ts": "2025-10-06T17:45:00Z",
+      "price": 159.99
+    },
+    {
+      "ts": "2025-10-06T18:00:00Z",
+      "price": 221.48
+    },
+    {
+      "ts": "2025-10-06T18:15:00Z",
+      "price": 192.04
+    },
+    {
+      "ts": "2025-10-06T18:30:00Z",
+      "price": 153.29
+    },
+    {
+      "ts": "2025-10-06T18:45:00Z",
+      "price": 131.98
+    },
+    {
+      "ts": "2025-10-06T19:00:00Z",
+      "price": 132.99
+    },
+    {
+      "ts": "2025-10-06T19:15:00Z",
+      "price": 127.29
+    },
+    {
+      "ts": "2025-10-06T19:30:00Z",
+      "price": 118.44
+    },
+    {
+      "ts": "2025-10-06T19:45:00Z",
+      "price": 115.23
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": [
+      {
+        "ts": "2025-10-06T16:00:00Z",
+        "value": 5233.73
+      },
+      {
+        "ts": "2025-10-06T17:00:00Z",
+        "value": 5053.34
+      },
+      {
+        "ts": "2025-10-06T18:00:00Z",
+        "value": 4830.31
+      },
+      {
+        "ts": "2025-10-06T19:00:00Z",
+        "value": 4477.2
+      }
+    ]
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YCA-BULGARIA-R",
+    "day": "2025-10-06",
+    "kind": "ramp",
+    "target_ts": "2025-10-06T17:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}

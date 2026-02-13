@@ -1,0 +1,106 @@
+{
+  "case_id": "cee_071",
+  "zone": "BG",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone BG during 2025-10-06T14:45:00Z to 2025-10-06T15:00:00Z. Provide the top drivers with numeric evidence and timestamps from the provided series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-06T12:45:00Z",
+      "price": 136.42
+    },
+    {
+      "ts": "2025-10-06T13:00:00Z",
+      "price": 103.96
+    },
+    {
+      "ts": "2025-10-06T13:15:00Z",
+      "price": 131.86
+    },
+    {
+      "ts": "2025-10-06T13:30:00Z",
+      "price": 153.29
+    },
+    {
+      "ts": "2025-10-06T13:45:00Z",
+      "price": 156.3
+    },
+    {
+      "ts": "2025-10-06T14:00:00Z",
+      "price": 153.29
+    },
+    {
+      "ts": "2025-10-06T14:15:00Z",
+      "price": 153.3
+    },
+    {
+      "ts": "2025-10-06T14:30:00Z",
+      "price": 230.61
+    },
+    {
+      "ts": "2025-10-06T14:45:00Z",
+      "price": 294.76
+    },
+    {
+      "ts": "2025-10-06T15:00:00Z",
+      "price": 153.29
+    },
+    {
+      "ts": "2025-10-06T15:15:00Z",
+      "price": 153.3
+    },
+    {
+      "ts": "2025-10-06T15:30:00Z",
+      "price": 218.68
+    },
+    {
+      "ts": "2025-10-06T15:45:00Z",
+      "price": 253.49
+    },
+    {
+      "ts": "2025-10-06T16:00:00Z",
+      "price": 153.3
+    },
+    {
+      "ts": "2025-10-06T16:15:00Z",
+      "price": 200.0
+    },
+    {
+      "ts": "2025-10-06T16:30:00Z",
+      "price": 281.32
+    },
+    {
+      "ts": "2025-10-06T16:45:00Z",
+      "price": 325.39
+    }
+  ],
+  "exogenous_series": {
+    "load_mw": [
+      {
+        "ts": "2025-10-06T13:00:00Z",
+        "value": 4869.95
+      },
+      {
+        "ts": "2025-10-06T14:00:00Z",
+        "value": 4920.13
+      },
+      {
+        "ts": "2025-10-06T15:00:00Z",
+        "value": 5099.25
+      },
+      {
+        "ts": "2025-10-06T16:00:00Z",
+        "value": 5233.73
+      }
+    ]
+  },
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API (A44 + A65)",
+    "zone_eic": "10YCA-BULGARIA-R",
+    "day": "2025-10-06",
+    "kind": "spike",
+    "target_ts": "2025-10-06T14:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2
+  }
+}
