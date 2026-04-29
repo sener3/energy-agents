@@ -1,0 +1,123 @@
+{
+  "case_id": "cee_winter_2025_2026_131",
+  "zone": "BG",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone BG during 2026-01-14T14:30:00Z to 2026-01-14T14:45:00Z. Provide the top drivers with numeric evidence and timestamps from the provided price series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2026-01-14T12:30:00Z",
+      "price": 178.92
+    },
+    {
+      "ts": "2026-01-14T12:45:00Z",
+      "price": 162.5
+    },
+    {
+      "ts": "2026-01-14T13:00:00Z",
+      "price": 165.92
+    },
+    {
+      "ts": "2026-01-14T13:15:00Z",
+      "price": 184.34
+    },
+    {
+      "ts": "2026-01-14T13:30:00Z",
+      "price": 188.77
+    },
+    {
+      "ts": "2026-01-14T13:45:00Z",
+      "price": 190.1
+    },
+    {
+      "ts": "2026-01-14T14:00:00Z",
+      "price": 173.73
+    },
+    {
+      "ts": "2026-01-14T14:15:00Z",
+      "price": 281.5
+    },
+    {
+      "ts": "2026-01-14T14:30:00Z",
+      "price": 392.96
+    },
+    {
+      "ts": "2026-01-14T14:45:00Z",
+      "price": 379.36
+    },
+    {
+      "ts": "2026-01-14T15:00:00Z",
+      "price": 190.39
+    },
+    {
+      "ts": "2026-01-14T15:15:00Z",
+      "price": 210.4
+    },
+    {
+      "ts": "2026-01-14T15:30:00Z",
+      "price": 315.49
+    },
+    {
+      "ts": "2026-01-14T15:45:00Z",
+      "price": 317.28
+    },
+    {
+      "ts": "2026-01-14T16:00:00Z",
+      "price": 245.65
+    },
+    {
+      "ts": "2026-01-14T16:15:00Z",
+      "price": 269.88
+    },
+    {
+      "ts": "2026-01-14T16:30:00Z",
+      "price": 302.03
+    }
+  ],
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API; A44 prices used as model input; A65 load used only for construction audit when available",
+    "zone_eic": "10YCA-BULGARIA-R",
+    "day": "2026-01-14",
+    "kind": "spike",
+    "target_ts": "2026-01-14T14:30:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2,
+    "period": "winter_2025_2026",
+    "period_start": "2025-12-01T00:00:00Z",
+    "period_end": "2026-02-28T00:00:00Z",
+    "month": 1,
+    "season": "winter",
+    "is_weekend": false,
+    "is_holiday_window": false,
+    "case_construction": {
+      "method": "temporal_robustness_two_stage_quantile_plus_impact_selection",
+      "stage_1_candidate_generation": {
+        "daily_price_q95": 315.9375,
+        "daily_abs_delta_q90": 85.79000000000009
+      },
+      "stage_2_final_selection": {
+        "impact_tier": "high",
+        "balanced_over": [
+          "period",
+          "zone",
+          "kind",
+          "impact_tier"
+        ],
+        "audit_variables_not_model_inputs": true
+      },
+      "audit_metrics": {
+        "target_price_eur_mwh": 392.96,
+        "target_delta_eur_mwh": 111.45999999999998,
+        "target_abs_delta_eur_mwh": 111.45999999999998,
+        "context_median_price_eur_mwh": 210.4,
+        "context_mean_price_eur_mwh": 244.07176470588237,
+        "price_premium_vs_context_median_eur_mwh": 182.55999999999997,
+        "price_deviation_vs_context_mean_eur_mwh": 148.8882352941176,
+        "price_impact_score": 182.55999999999997,
+        "selection_impact_score": 0.9844505874222529,
+        "load_mw_at_target_audit_only": null,
+        "economic_proxy_eur_15m_audit_only": null
+      }
+    }
+  }
+}

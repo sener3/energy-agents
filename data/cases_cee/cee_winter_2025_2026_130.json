@@ -1,0 +1,107 @@
+{
+  "case_id": "cee_winter_2025_2026_130",
+  "zone": "BG",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone BG around 2026-02-22T22:45:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided price series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2026-02-22T20:45:00Z",
+      "price": 72.44
+    },
+    {
+      "ts": "2026-02-22T21:00:00Z",
+      "price": 91.03
+    },
+    {
+      "ts": "2026-02-22T21:15:00Z",
+      "price": 83.11
+    },
+    {
+      "ts": "2026-02-22T21:30:00Z",
+      "price": 72.21
+    },
+    {
+      "ts": "2026-02-22T21:45:00Z",
+      "price": 59.43
+    },
+    {
+      "ts": "2026-02-22T22:00:00Z",
+      "price": 76.5
+    },
+    {
+      "ts": "2026-02-22T22:15:00Z",
+      "price": 60.4
+    },
+    {
+      "ts": "2026-02-22T22:30:00Z",
+      "price": 51.16
+    },
+    {
+      "ts": "2026-02-22T22:45:00Z",
+      "price": 31.88
+    },
+    {
+      "ts": "2026-02-22T23:00:00Z",
+      "price": 54.15
+    },
+    {
+      "ts": "2026-02-22T23:15:00Z",
+      "price": 47.65
+    },
+    {
+      "ts": "2026-02-22T23:30:00Z",
+      "price": 40.21
+    },
+    {
+      "ts": "2026-02-22T23:45:00Z",
+      "price": 50.98
+    }
+  ],
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API; A44 prices used as model input; A65 load used only for construction audit when available",
+    "zone_eic": "10YCA-BULGARIA-R",
+    "day": "2026-02-22",
+    "kind": "ramp",
+    "target_ts": "2026-02-22T22:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2,
+    "period": "winter_2025_2026",
+    "period_start": "2025-12-01T00:00:00Z",
+    "period_end": "2026-02-28T00:00:00Z",
+    "month": 2,
+    "season": "winter",
+    "is_weekend": true,
+    "is_holiday_window": false,
+    "case_construction": {
+      "method": "temporal_robustness_two_stage_quantile_plus_impact_selection",
+      "stage_1_candidate_generation": {
+        "daily_price_q95": 100.39099999999999,
+        "daily_abs_delta_q90": 18.720000000000006
+      },
+      "stage_2_final_selection": {
+        "impact_tier": "medium",
+        "balanced_over": [
+          "period",
+          "zone",
+          "kind",
+          "impact_tier"
+        ],
+        "audit_variables_not_model_inputs": true
+      },
+      "audit_metrics": {
+        "target_price_eur_mwh": 31.88,
+        "target_delta_eur_mwh": -19.279999999999998,
+        "target_abs_delta_eur_mwh": 19.279999999999998,
+        "context_median_price_eur_mwh": 59.43,
+        "context_mean_price_eur_mwh": 60.857692307692304,
+        "price_premium_vs_context_median_eur_mwh": 0.0,
+        "price_deviation_vs_context_mean_eur_mwh": 28.977692307692305,
+        "price_impact_score": 28.977692307692305,
+        "selection_impact_score": 0.6609435173299102,
+        "load_mw_at_target_audit_only": null,
+        "economic_proxy_eur_15m_audit_only": null
+      }
+    }
+  }
+}

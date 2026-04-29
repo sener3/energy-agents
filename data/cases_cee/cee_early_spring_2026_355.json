@@ -1,0 +1,123 @@
+{
+  "case_id": "cee_early_spring_2026_355",
+  "zone": "SK",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone SK during 2026-03-08T16:45:00Z to 2026-03-08T17:00:00Z. Provide the top drivers with numeric evidence and timestamps from the provided price series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2026-03-08T14:45:00Z",
+      "price": 122.58
+    },
+    {
+      "ts": "2026-03-08T15:00:00Z",
+      "price": 74.64
+    },
+    {
+      "ts": "2026-03-08T15:15:00Z",
+      "price": 114.18
+    },
+    {
+      "ts": "2026-03-08T15:30:00Z",
+      "price": 144.58
+    },
+    {
+      "ts": "2026-03-08T15:45:00Z",
+      "price": 164.66
+    },
+    {
+      "ts": "2026-03-08T16:00:00Z",
+      "price": 125.9
+    },
+    {
+      "ts": "2026-03-08T16:15:00Z",
+      "price": 140.22
+    },
+    {
+      "ts": "2026-03-08T16:30:00Z",
+      "price": 150.11
+    },
+    {
+      "ts": "2026-03-08T16:45:00Z",
+      "price": 173.33
+    },
+    {
+      "ts": "2026-03-08T17:00:00Z",
+      "price": 151.39
+    },
+    {
+      "ts": "2026-03-08T17:15:00Z",
+      "price": 153.58
+    },
+    {
+      "ts": "2026-03-08T17:30:00Z",
+      "price": 153.36
+    },
+    {
+      "ts": "2026-03-08T17:45:00Z",
+      "price": 170.79
+    },
+    {
+      "ts": "2026-03-08T18:00:00Z",
+      "price": 160.2
+    },
+    {
+      "ts": "2026-03-08T18:15:00Z",
+      "price": 150.87
+    },
+    {
+      "ts": "2026-03-08T18:30:00Z",
+      "price": 155.14
+    },
+    {
+      "ts": "2026-03-08T18:45:00Z",
+      "price": 150.0
+    }
+  ],
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API; A44 prices used as model input; A65 load used only for construction audit when available",
+    "zone_eic": "10YSK-SEPS-----K",
+    "day": "2026-03-08",
+    "kind": "spike",
+    "target_ts": "2026-03-08T16:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2,
+    "period": "early_spring_2026",
+    "period_start": "2026-03-01T00:00:00Z",
+    "period_end": "2026-04-20T00:00:00Z",
+    "month": 3,
+    "season": "spring",
+    "is_weekend": true,
+    "is_holiday_window": false,
+    "case_construction": {
+      "method": "temporal_robustness_two_stage_quantile_plus_impact_selection",
+      "stage_1_candidate_generation": {
+        "daily_price_q95": 154.126,
+        "daily_abs_delta_q90": 25.265999999999995
+      },
+      "stage_2_final_selection": {
+        "impact_tier": "low",
+        "balanced_over": [
+          "period",
+          "zone",
+          "kind",
+          "impact_tier"
+        ],
+        "audit_variables_not_model_inputs": true
+      },
+      "audit_metrics": {
+        "target_price_eur_mwh": 173.33,
+        "target_delta_eur_mwh": 23.22,
+        "target_abs_delta_eur_mwh": 23.22,
+        "context_median_price_eur_mwh": 150.87,
+        "context_mean_price_eur_mwh": 144.44294117647058,
+        "price_premium_vs_context_median_eur_mwh": 22.460000000000008,
+        "price_deviation_vs_context_mean_eur_mwh": 28.88705882352943,
+        "price_impact_score": 28.88705882352943,
+        "selection_impact_score": 0.3241758241758242,
+        "load_mw_at_target_audit_only": null,
+        "economic_proxy_eur_15m_audit_only": null
+      }
+    }
+  }
+}

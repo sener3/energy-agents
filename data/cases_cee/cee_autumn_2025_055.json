@@ -1,0 +1,123 @@
+{
+  "case_id": "cee_autumn_2025_055",
+  "zone": "HU",
+  "resolution": "15m",
+  "question": "Explain the price spike in zone HU during 2025-10-19T16:45:00Z to 2025-10-19T17:00:00Z. Provide the top drivers with numeric evidence and timestamps from the provided price series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2025-10-19T14:45:00Z",
+      "price": 175.13
+    },
+    {
+      "ts": "2025-10-19T15:00:00Z",
+      "price": 102.15
+    },
+    {
+      "ts": "2025-10-19T15:15:00Z",
+      "price": 129.99
+    },
+    {
+      "ts": "2025-10-19T15:30:00Z",
+      "price": 170.5
+    },
+    {
+      "ts": "2025-10-19T15:45:00Z",
+      "price": 190.73
+    },
+    {
+      "ts": "2025-10-19T16:00:00Z",
+      "price": 161.99
+    },
+    {
+      "ts": "2025-10-19T16:15:00Z",
+      "price": 169.5
+    },
+    {
+      "ts": "2025-10-19T16:30:00Z",
+      "price": 187.22
+    },
+    {
+      "ts": "2025-10-19T16:45:00Z",
+      "price": 204.67
+    },
+    {
+      "ts": "2025-10-19T17:00:00Z",
+      "price": 205.25
+    },
+    {
+      "ts": "2025-10-19T17:15:00Z",
+      "price": 207.8
+    },
+    {
+      "ts": "2025-10-19T17:30:00Z",
+      "price": 196.87
+    },
+    {
+      "ts": "2025-10-19T17:45:00Z",
+      "price": 196.86
+    },
+    {
+      "ts": "2025-10-19T18:00:00Z",
+      "price": 177.74
+    },
+    {
+      "ts": "2025-10-19T18:15:00Z",
+      "price": 189.95
+    },
+    {
+      "ts": "2025-10-19T18:30:00Z",
+      "price": 184.83
+    },
+    {
+      "ts": "2025-10-19T18:45:00Z",
+      "price": 181.31
+    }
+  ],
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API; A44 prices used as model input; A65 load used only for construction audit when available",
+    "zone_eic": "10YHU-MAVIR----U",
+    "day": "2025-10-19",
+    "kind": "spike",
+    "target_ts": "2025-10-19T16:45:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2,
+    "period": "autumn_2025",
+    "period_start": "2025-10-01T00:00:00Z",
+    "period_end": "2025-11-30T00:00:00Z",
+    "month": 10,
+    "season": "autumn",
+    "is_weekend": true,
+    "is_holiday_window": false,
+    "case_construction": {
+      "method": "temporal_robustness_two_stage_quantile_plus_impact_selection",
+      "stage_1_candidate_generation": {
+        "daily_price_q95": 192.569,
+        "daily_abs_delta_q90": 26.45
+      },
+      "stage_2_final_selection": {
+        "impact_tier": "low",
+        "balanced_over": [
+          "period",
+          "zone",
+          "kind",
+          "impact_tier"
+        ],
+        "audit_variables_not_model_inputs": true
+      },
+      "audit_metrics": {
+        "target_price_eur_mwh": 204.67,
+        "target_delta_eur_mwh": 17.44999999999999,
+        "target_abs_delta_eur_mwh": 17.44999999999999,
+        "context_median_price_eur_mwh": 184.83,
+        "context_mean_price_eur_mwh": 178.38176470588238,
+        "price_premium_vs_context_median_eur_mwh": 19.839999999999975,
+        "price_deviation_vs_context_mean_eur_mwh": 26.288235294117612,
+        "price_impact_score": 26.288235294117612,
+        "selection_impact_score": 0.31309904153354634,
+        "load_mw_at_target_audit_only": null,
+        "economic_proxy_eur_15m_audit_only": null
+      }
+    }
+  }
+}

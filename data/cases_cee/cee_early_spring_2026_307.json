@@ -1,0 +1,123 @@
+{
+  "case_id": "cee_early_spring_2026_307",
+  "zone": "PL",
+  "resolution": "15m",
+  "question": "Explain the rapid price change (ramping) in zone PL around 2026-03-08T08:15:00Z. Identify the key interval(s) and provide numeric evidence (deltas) with timestamps from the provided price series. If you cannot be certain, state the uncertainty explicitly.",
+  "timeseries": [
+    {
+      "ts": "2026-03-08T06:15:00Z",
+      "price": 129.83
+    },
+    {
+      "ts": "2026-03-08T06:30:00Z",
+      "price": 110.23
+    },
+    {
+      "ts": "2026-03-08T06:45:00Z",
+      "price": 90.14
+    },
+    {
+      "ts": "2026-03-08T07:00:00Z",
+      "price": 105.65
+    },
+    {
+      "ts": "2026-03-08T07:15:00Z",
+      "price": 68.4
+    },
+    {
+      "ts": "2026-03-08T07:30:00Z",
+      "price": 29.0
+    },
+    {
+      "ts": "2026-03-08T07:45:00Z",
+      "price": 0.0
+    },
+    {
+      "ts": "2026-03-08T08:00:00Z",
+      "price": -5.88
+    },
+    {
+      "ts": "2026-03-08T08:15:00Z",
+      "price": -37.8
+    },
+    {
+      "ts": "2026-03-08T08:30:00Z",
+      "price": -68.99
+    },
+    {
+      "ts": "2026-03-08T08:45:00Z",
+      "price": -57.0
+    },
+    {
+      "ts": "2026-03-08T09:00:00Z",
+      "price": -41.58
+    },
+    {
+      "ts": "2026-03-08T09:15:00Z",
+      "price": -28.02
+    },
+    {
+      "ts": "2026-03-08T09:30:00Z",
+      "price": -28.46
+    },
+    {
+      "ts": "2026-03-08T09:45:00Z",
+      "price": -28.0
+    },
+    {
+      "ts": "2026-03-08T10:00:00Z",
+      "price": -7.14
+    },
+    {
+      "ts": "2026-03-08T10:15:00Z",
+      "price": -3.97
+    }
+  ],
+  "public_events": [],
+  "metadata": {
+    "source": "ENTSO-E Transparency Platform API; A44 prices used as model input; A65 load used only for construction audit when available",
+    "zone_eic": "10YPL-AREA-----S",
+    "day": "2026-03-08",
+    "kind": "ramp",
+    "target_ts": "2026-03-08T08:15:00Z",
+    "context_before_h": 2,
+    "context_after_h": 2,
+    "period": "early_spring_2026",
+    "period_start": "2026-03-01T00:00:00Z",
+    "period_end": "2026-04-20T00:00:00Z",
+    "month": 3,
+    "season": "spring",
+    "is_weekend": true,
+    "is_holiday_window": false,
+    "case_construction": {
+      "method": "temporal_robustness_two_stage_quantile_plus_impact_selection",
+      "stage_1_candidate_generation": {
+        "daily_price_q95": 155.39999999999998,
+        "daily_abs_delta_q90": 29.46800000000001
+      },
+      "stage_2_final_selection": {
+        "impact_tier": "medium",
+        "balanced_over": [
+          "period",
+          "zone",
+          "kind",
+          "impact_tier"
+        ],
+        "audit_variables_not_model_inputs": true
+      },
+      "audit_metrics": {
+        "target_price_eur_mwh": -37.8,
+        "target_delta_eur_mwh": -31.919999999999998,
+        "target_abs_delta_eur_mwh": 31.919999999999998,
+        "context_median_price_eur_mwh": -5.88,
+        "context_mean_price_eur_mwh": 13.31823529411765,
+        "price_premium_vs_context_median_eur_mwh": 0.0,
+        "price_deviation_vs_context_mean_eur_mwh": 51.118235294117646,
+        "price_impact_score": 51.118235294117646,
+        "selection_impact_score": 0.666009204470743,
+        "load_mw_at_target_audit_only": null,
+        "economic_proxy_eur_15m_audit_only": null
+      }
+    }
+  }
+}
